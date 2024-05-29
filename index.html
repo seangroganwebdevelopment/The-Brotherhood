@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Brotherhood</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">The Brotherhood</div>
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#bio">Author</a></li>
+                <li><a href="#portfolio">Chapters</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-text">
+            <h1>The Brotherhood</h1>
+            <p>An enthralling tale of friendship and adventure in 1990s South Africa.</p>
+        </div>
+    </section>
+
+    <section id="bio" class="bio">
+        <h2>About the Author</h2>
+        <p>[Author Bio]</p>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Chapters</h2>
+        <ul>
+            <li><a href="chapter1.html">Chapter 1</a></li>
+            <li><a href="chapter2.html">Chapter 2</a></li>
+            <li><a href="chapter3.html">Chapter 3</a></li>
+            <li><a href="chapter4.html">Chapter 4</a></li>
+            <li><a href="chapter5.html">Chapter 5</a></li>
+            <li><a href="chapter6.html">Chapter 6</a></li>
+            <li><a href="chapter7.html">Chapter 7</a></li>
+            <li><a href="chapter8.html">Chapter 8</a></li>
+            <li><a href="chapter9.html">Chapter 9</a></li>
+            <li><a href="chapter10.html">Chapter 10</a></li>
+            <li><a href="chapter11.html">Chapter 11</a></li>
+            <li><a href="chapter12.html">Chapter 12</a></li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 The Brotherhood</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
